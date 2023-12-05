@@ -1,0 +1,29 @@
+{
+    "contactMe": [
+      {
+        "nombre": "GitHub",
+        "linkValue": "https://github.com/rgc87"
+      },
+      {
+        "nombre": "Instagram",
+        "linkValue": "https://www.instagram.com/hazloencodigo/"
+      },
+      {
+        "nombre": "LinkedIn",
+        "linkValue": "https://www.linkedin.com/in/roberto-f-gallegos-cabezas/"
+      },
+      {
+        "nombre": "Whatsapp",
+        "linkValue": "https://web.whatsapp.com/send?phone=56928584406&text=Hola%20Roberto%20,%20quiero%20comunicarme%20contigo."
+      },
+      {
+        "nombre": "Gmail",
+        "linkValue": "mailto:hazloencodigo@gmail.com"
+      },
+      {
+        "nombre": "Celular",
+        "linkValue": "56928584406"
+      }
+    ]
+  }
+  

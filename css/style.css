@@ -1,0 +1,383 @@
+/* colors {
+    uno     :#03001C; negro
+    dos     :#301E67; morado
+    tres    :#5B8FB9; magenta
+    cuatro  :#B6EADA;
+} */
+
+body,html {
+    font-family     : 'Montserrat', sans-serif;
+    /* overflow        : hidden; */
+    /* height          : "100%"; */
+    margin          : 0;
+}
+
+.navbar {
+    background-color: #03001C;
+    color           : white;
+    padding         : 15px 0;
+    position        : fixed;
+    width           : 100%;
+    top             : 0;
+    left            : 0;
+    z-index         : 1000;
+    transition      : background-color 0.5s, padding 0.5s;
+}
+.navbar-container {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    margin          : 0 30px;
+}
+
+.navbar-center a {
+    font-size       : 1rem;
+    color           : white;
+    text-decoration : none;
+    margin          : 0 10px;
+    transition      : color 0.5s;
+}
+.navbar-center a:hover {
+    color           : #5B8FB9;
+}
+.navbar-right h1 {
+    background-color: #301E67;
+    font-size       : 0.7rem;
+    margin          : 0;
+    padding         : 10px;
+    border-radius   : 10px;
+    transition      : background-color 0.5s, color 0.5s;
+    color           : white;
+}
+.navbar-right h1:hover {
+    background-color: #B6EADA;
+    color           : #03001C;
+}
+.navbar.scrolled {
+    background-color: #3498db;
+    color           : #03001C;
+    padding         : 5px 0;
+}
+
+
+/* MAIN TITLE */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.main-title {
+    background-color: #301E67;
+    color           : white;
+    max-width       : 100%;
+    font-size       : 1.5rem;
+    margin-top      : 30px;
+    margin-bottom   : 30px;
+    margin-left     : 15px;
+    margin-right    : 15px;
+    padding         : 30px;
+    border-radius   : 10px;
+    animation       : fadeIn 2s ease-out;
+}
+/* MAIN TITLE END */
+
+
+/* Container */
+.container {
+    display         : flex;
+    margin-top      : 50px;
+    /* overflow        : auto; */
+}
+.column {
+    box-sizing      : border-box;
+}
+.column-25 {
+    flex            : 1;
+    width           : 25%;
+}
+.column-25 img {
+    border          : 1px solid #ddd;
+    border-radius   : 50%;
+}
+.column-50 {
+    flex            : 2;
+    width           : 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius   : 10px;
+    overflow        : hidden; /* Asegurar que la sombra no se salga de los bordes redondeados */
+    box-shadow      : 0 0 10px rgba(0, 0, 0, 0.15); /* Añadir sombra suave */
+}
+.column-50:hover {
+    box-shadow      : 0 0 20px rgba(0, 0, 0, 0.35); /* Aumentar sombra al pasar el mouse */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* transform: translateX(200px); */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateX(0); */
+    }
+}
+.section-title {
+    background-color: #5B8FB9;
+    border-radius   : 10px;
+    padding         : 10px;
+
+    color           : #03001C;
+    font-size       : 1rem;
+    margin          : 15px;
+    animation       : fadeIn 2s ease-in-out;
+}
+
+.section-description,
+.servicio-bloque {
+    color           : #555;
+    font-size       : 1rem;
+    line-height     : 1.5;
+    margin-left     : 30px;
+    margin-right    : 30px;
+    margin-bottom   : 30px;
+}
+
+.service-list {
+    max-width       : 100%;
+    margin-bottom   : 50px;
+}
+.service-list .bullet {
+    font-size       : 1rem;
+    margin-right    : 5px;
+}
+.service-list ul {
+    list-style-type : none;
+    padding         : 0;
+}
+.service-list li {
+    background-color: #B6EADA;
+    color: #555;
+    padding         : 10px;
+    margin-bottom   : 10px;
+    margin-left     : 30px;
+    margin-right    : 20px;
+    border-radius   : 5px;
+}
+
+
+/* Agrega estilos para el botón */
+#mostrarServiciosBtn {
+    background-color: #B6EADA;
+    color           : black;
+    padding         : 10px 30px;
+    font-size       : 1rem;
+    border          : none;
+    cursor          : pointer;
+    border-radius   : 5px;
+    margin-top      : 15px;
+    transition      : background-color 0.3s;
+}
+
+
+/* Cambia el color de fondo al pasar el mouse sobre el botón */
+#mostrarServiciosBtn:hover {
+    background-color: #5B8FB9;
+}
+
+
+.logos-container {
+    position    : fixed;
+    bottom      : 20px;
+    right       : 20px;
+    display     : flex;
+    align-items : center;
+}
+
+.logo-text {
+    position        : fixed;
+    background-color: #B6EADA;
+    color           : #03001C;
+    bottom          : 100px;
+    font-size       : 1rem;
+    opacity         : 0.5;
+    transition      : opacity 0.5s;
+    padding         : 5px;
+    border-radius   : 5px;
+}
+.rrss-text {
+    left            : 25px;
+}
+.rrss-text:hover {
+    opacity     : 1;
+    transform   : scale(1.2);
+}
+
+.bottom-logo-size {
+    position        : fixed;
+    bottom          : 20px;
+    width           : 37px;
+    height          : 40px;
+    padding         : 10px;
+    border-radius   : 50%;
+}
+.github-logo {
+    left            : 20px;
+    transition      : background-color 0.3s, transform 0.3s;
+}
+.github-logo:hover {
+    background-color: #24292e; /* Color de fondo al pasar el mouse */
+    transform: scale(1.2);
+}
+.instagram-logo {
+    left            : 100px;
+    transition      : background-color 0.3s, transform 0.3s;
+}
+.instagram-logo:hover {
+    background-color: #e4405f;
+    transform: scale(1.2);
+}
+.linkedin-logo {
+    left            : 180px;
+    transition      : background-color 0.3s, transform 0.3s;
+}
+.linkedin-logo:hover {
+    background-color: #7192bb;
+    transform: scale(1.2);
+}
+/* .gmail-logo {
+    left            : 260px;
+    transition      : background-color 0.3s, transform 0.3s;
+}
+.gmail-logo:hover {
+    background-color: #7192bb;
+    transform: scale(1.2);
+} */
+
+
+.whatsapp-logo {
+    background-color: #25d366;
+    right           : 20px;
+    transition      : background-color 0.3s, transform 0.3s;
+}
+.whatsapp-text {
+    right           : 25px;
+}
+.whatsapp-logo:hover {
+    background-color: #128c7e;
+    transform       : scale(1.2);
+}
+.whatsapp-logo:hover + .whatsapp-text,
+.whatsapp-text:hover {
+    opacity     : 1;
+    transform   : scale(1.2);
+}
+
+
+/* not Pie de página */
+.dark-block {
+    background-color: #03001C;
+    color           : white;
+    padding         : 25px;
+    border-radius   : 0px;
+    margin-top      : 50px;
+}
+.dark-block p {
+    text-align      : center;
+    font-size       : 0.8rem;
+}
+
+.dark-block a {
+    color           : white;
+    text-decoration : underline;
+    transition      : color 0.3s, text-decoration 0.3s;
+}
+
+.dark-block a:hover {
+    color           : #5B8FB9;
+    text-decoration : none; /* Elimina el subrayado al pasar el mouse */
+}
+
+
+/* PARALLAX */
+.parallax-section {
+    background-image    : url('../images/profile-circle-bic.png');
+    /* background-size     : cover; */
+    background-size     : 60%;
+    background-position : center;
+    background-repeat   : no-repeat;
+    color               : white;
+    text-align          : center;
+    padding             : 50px 0;
+    margin-top          : 150px;
+}
+
+.parallax-content {
+    background-color    : rgba(0, 0, 0, 0.5);
+    margin-top          : 160px; /* THIS ! */
+    margin-left         : 10px;
+    margin-right        : 10px;
+    padding             : 10px;
+}
+
+.parallax-content h2,
+.parallax-content p {
+    margin: 0;
+}
+
+/* Agrega estilos específicos para el modo oscuro si es necesario */
+
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos móviles */
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .navbar-container {
+        margin: 0 10px;
+    }
+
+    .navbar-left h1 {
+        margin-right: 10px;
+    }
+
+    .navbar-center {
+        display: none; /* Oculta los enlaces en dispositivos móviles */
+    }
+
+    .navbar-right {
+        margin-right: 10px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos móviles */
+    .navbar-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-center a {
+        margin: 10px 0;
+    }
+
+    .navbar-right {
+        margin: 10px 0;
+    }
+}
